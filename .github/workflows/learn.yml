@@ -12,3 +12,9 @@ jobs:
         steps:
             - name: echo
               run: echo "hello world"
+
+            - name: run script
+              run: |
+                ls -l ./scripts
+                chmod +x ./scripts/hi.sh
+                ./scripts/hi.sh
